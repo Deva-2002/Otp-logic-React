@@ -1,12 +1,43 @@
-# React + Vite
+# 🔐 OTP Simulator – React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple **OTP (One Time Password) Input Simulator** built using **React.js**, often asked as a **common frontend interview question**.
 
-Currently, two official plugins are available:
+The app simulates a user flow where:
+- A user enters their **phone number**
+- An OTP input screen is rendered
+- User enters OTP digits into **individual input fields**
+- Inputs automatically focus, validate, and move to the next field
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Enter phone number with validation  
+✅ Individual OTP input boxes (custom length)  
+✅ Auto-focus to next input on key press  
+✅ Move backward on backspace  
+✅ Clean and reusable logic using `useRef` and `useState`  
+✅ Keyboard navigation: Enter, Backspace, Arrow keys  
+✅ Responsive with TailwindCSS (optional)
+
+---
+
+## 📁 Folder Structure
+
+
+src/
+├── components/
+│ ├── PhoneNumber.jsx
+│ └── Otp.jsx
+├── App.jsx
+├── main.jsx
+
+
+---
+
+## 📦 Technologies Used
+
+- React (Hooks: `useState`, `useRef`, `useEffect`)
+- React Router DOM
+- Tailwind CSS (for styling)
+- JavaScript (ES6+)
